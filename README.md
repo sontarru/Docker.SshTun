@@ -13,8 +13,7 @@ services:
     user: 1000:1000
     ports:
       - 9090:9090
-    environment:
-      - SERVER: server.com[:port]
+    command: server.com[:port]
     volumes:
       - /etc/passwd:/etc/passwd
       - /etc/group:/etc/group
