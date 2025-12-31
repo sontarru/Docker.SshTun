@@ -9,8 +9,8 @@ services:
   sshtun:
     image: ghcr.io/sontarru/sshtun:latest
     restart: unless-stopped
-    container_name: dnsmasq:latest
-    user: ${USER}
+    container_name: sshtun
+    user: 1000:1000
     ports:
       - 9090:9090
     environment:
