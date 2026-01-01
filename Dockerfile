@@ -5,4 +5,4 @@ RUN apk update --no-cache && \
 
 EXPOSE 9090
 
-ENTRYPOINT ["/usr/bin/ssh", "-D", "*:9090", "-N", "-vvv", "-f"]
+ENTRYPOINT ["/usr/bin/ssh", "-D", "*:9090", "-N", "-vvv"]
