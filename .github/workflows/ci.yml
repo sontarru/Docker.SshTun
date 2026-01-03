@@ -2,7 +2,7 @@ name: CI
 
 env:
   NAME: "sshtun"
-  TAG: "10.2.0"
+  TAG: "10.2.1"
 
 on:
   workflow_dispatch:
